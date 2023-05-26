@@ -1,6 +1,6 @@
 ### Student Chart.
 
-See the section about [demo](https://jolly-sherbet-8e98c8.netlify.app/) for more information.
+See the section about [demo](https://lovely-banoffee-85e375.netlify.app/) for more information.
 
 
 
