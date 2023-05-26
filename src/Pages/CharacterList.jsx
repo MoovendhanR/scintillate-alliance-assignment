@@ -65,7 +65,7 @@ function CharacterList() {
   let navigate = useNavigate()
   function handleClick() {
     setTimeout(() => {
-      navigate('/detailview')
+      navigate('/detailedview')
     }, 1250)
   }
 
@@ -118,7 +118,12 @@ function CharacterList() {
   return (
     <>
       <Center>
-        <Text fontSize='5xl' textAlign='center' textDecoration={"underline overline"}>CHARACTERS</Text>
+        <Text fontSize='5xl' textAlign='center' textDecoration={"underline overline"}
+         bgGradient='linear(to-l, #7928CA, #FF0080)'
+         bgClip='text'
+        //  fontSize='6xl'
+         fontWeight='extrabold'
+        >CHARACTERS</Text>
 
       </Center>
       <br />
@@ -170,9 +175,14 @@ function CharacterList() {
         <Stack direction='row' spacing={4}>
           <Button
             disabled={increments === 1 ? true : false}
-            colorScheme='blue'
-            variant='solid'
-            _hover={{ bg: 'white', color: "black", border: '1px solid black' }}
+            p={4}
+            color='white'
+            fontWeight='bold'
+            borderRadius='md'
+            bgGradient='linear(to-r, teal.500, green.500)'
+            _hover={{
+              bgGradient: 'linear(to-r, red.500, yellow.500)',
+            }}
             onClick={decNum}
           >
             <Icon as={ArrowLeftIcon} />
@@ -180,9 +190,14 @@ function CharacterList() {
           </Button>
           <Button
             disabled={increments === 9 ? true : false}
-            colorScheme='blue'
-            variant='solid'
-            _hover={{ bg: 'white', color: 'black', border: '1px solid black' }}
+            p={4}
+            color='white'
+            fontWeight='bold'
+            borderRadius='md'
+            bgGradient='linear(to-r, teal.500, green.500)'
+            _hover={{
+              bgGradient: 'linear(to-r, red.500, yellow.500)',
+            }}
             onClick={incNum}
           >
             NEXT
@@ -195,7 +210,12 @@ function CharacterList() {
       <br />
       <Center>
 
-        <Text fontSize='5xl' textAlign='center' textDecoration={"underline overline"}>FAVORITES</Text>
+        <Text fontSize='5xl' textAlign='center' textDecoration={"underline overline"}
+         bgGradient='linear(to-l, #FF0080, #7928CA)'
+         bgClip='text'
+        //  fontSize='6xl'
+         fontWeight='extrabold'
+        >FAVORITES</Text>
       </Center>
       <br />
       <Center>
@@ -228,6 +248,13 @@ function CharacterList() {
           ))}
         </Box>
       </Center>
+      <br />
+        <br/>  <br />
+        <br/>  <br />
+        <br/>  <br />
+        <br/>  <br />
+        
+      
 
     </>
   )

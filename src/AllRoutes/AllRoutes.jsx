@@ -1,17 +1,17 @@
-import React from 'react'
-import CharacterList from '../Pages/CharacterList'
-import { Route, Routes } from 'react-router'
-import DetailedView from '../Pages/Detailedview'
+import React from "react";
+import { Route, Routes } from "react-router";
+import CharacterList from "../Pages/CharacterList";
+import DetailedView from "../Pages/DetailedView";
 
-const AllRoutes = () => {
-  return (
-    <>
+function AllRoutes(){
+    return(
+        <>
         <Routes>
-          <Route path="/" element={<CharacterList/>}/>
-          <Route path="/detailview" element={<DetailedView/>}/>
+            <Route path='/' element={<CharacterList/>} />
+            <Route path='/detailedview' element={<DetailedView/>}/>
         </Routes>
-    </>
-  )
+        </>
+    )
 }
 
-export default AllRoutes
+export default AllRoutes;

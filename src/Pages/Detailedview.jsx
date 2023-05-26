@@ -15,7 +15,7 @@ function DetailedView(){
     const [isLoading,setLoading] = useState(false);
     const [url, setUrl] = useState();
     //  const [data, setData] = useState([])
-  console.log(url)
+
 useEffect(() => {
   const item = JSON.parse(localStorage.getItem('data'));
   if (item) {
@@ -23,9 +23,9 @@ useEffect(() => {
   }
 }, []);
 //    console.log("item",url)
-    CallFun(url)
+    FetchData(url)
     //function  calling
-    function CallFun(url) {
+    function FetchData(url) {
         useEffect(()=>{
         
         setTimeout(()=>{
@@ -44,7 +44,12 @@ useEffect(() => {
     return(
         <>
         <br />
-        <Heading fontSize='5xl' textAlign='center' textDecoration={"underline overline"}>Base Details</Heading>
+        <Heading fontSize='5xl' textAlign='center' textDecoration={"underline overline"}
+         bgGradient='linear(to-l, #7928ca, #FF0080)'
+         bgClip='text'
+        //  fontSize='6xl'
+         fontWeight='extrabold'
+        >Base Details</Heading>
           <br />
         <Center>
         <br/>
@@ -89,7 +94,12 @@ useEffect(() => {
         <br />
         <br/>
         <Center>
-          <Heading textDecoration={"underline overline"}>MOVIES</Heading>
+          <Heading textDecoration={"underline overline"}
+         bgGradient='linear(to-l, #7928CA, #FF0080)'
+         bgClip='text'
+        //  fontSize='6xl'
+         fontWeight='extrabold'
+          >MOVIES</Heading>
         </Center>
         <br />
           <Center>
@@ -99,6 +109,11 @@ useEffect(() => {
               })}
             </Box>
           </Center>
+          <br />
+        <br/>
+        <br />
+        <br/>  <br />
+        <br/>
         </>
     )
 }

@@ -1,7 +1,7 @@
 import { Box, Flex, Spinner, Text} from "@chakra-ui/react"
-import axios from "axios";
+import axios from "axios"
 import React, { useEffect, useState } from "react"
-import { BoxShadow } from "../Components/BoxShadow"
+import { BoxShadow } from "./BoxShadow"
 
 
 function DetailedMovies({movie_url}){
