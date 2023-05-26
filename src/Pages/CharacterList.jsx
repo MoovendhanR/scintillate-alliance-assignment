@@ -6,7 +6,7 @@ import { ArrowLeftIcon, ArrowRightIcon, Icon } from '@chakra-ui/icons'
 import { useNavigate } from "react-router-dom";
 import { IoIosHeart, IoIosHeartEmpty } from "react-icons/io"
 import { Box, Button, Center, Flex,  Spacer, Spinner, Stack, Text } from "@chakra-ui/react";
-import { BoxShadow, BoxShadow1 } from "./BoxShadow";
+import { BoxShadow, BoxShadow1 } from "../Components/BoxShadow";
 import { v4 as uuid } from 'uuid';
 
 function CharacterList() {
