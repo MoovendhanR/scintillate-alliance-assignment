@@ -12,7 +12,7 @@ function DetailedMovies({movie_url}){
       setLoading(true);
   axios.get(movie_url).then((res)=>{
 // console.log(res)
-setMovie(res.data)
+   setMovie(res.data)
   }).catch((err)=>{
     setLoading(false)
     console.log(err)
@@ -23,7 +23,8 @@ setMovie(res.data)
     return(
         <>
             <br/>
-            {isLoading ? (
+            { isLoading ? (
+              
         <Box boxShadow={BoxShadow} textAlign="center"p="20px">
         <Text fontSize='2xl' textDecoration={"underline"}>{Movie?.title}</Text>
         <Text>{`Director: ${Movie?.director}`}</Text>
@@ -40,8 +41,7 @@ setMovie(res.data)
                 size="lg"
               />
             </Flex>
-          )
-           }
+          )}
         <br />
         </>
     )

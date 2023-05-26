@@ -1,37 +1,38 @@
 import { Box, Container, Text } from "@chakra-ui/react";
 import React from "react";
+import { BoxShadow } from "./BoxShadow";
 
 
 
-export const DetailedCard=({name,gender,eye_color,skin_color,hair_color,height,mass})=>{
+export const DetailedCard=({lists})=>{
 
 
     return(
         <>
         <Container>
-            <Box>
-                <Text>
-                    {`Name:${name}`}
-                </Text>
-                <Text>
-                    {`Gender:${gender}`}
-                </Text>
-                <Text>
-                   {`Eye-color:${eye_color}`} 
-                </Text>
-                <Text>
-                    {`Skin_color:${skin_color}`}
-                    </Text>
-                    <Text>
-                    {`Hair_color:${hair_color}`}
-                    </Text>
-                    <Text>
-                    {`Height:${height}`}
-                    </Text>
-                    <Text>
-                    {`Mass:${mass}`}
-                    </Text>
-            </Box>
+        <Box boxShadow={BoxShadow} p="20px" textAlign={"center"} >
+               <Text as='b'textDecoration={"underline"}>
+                   {`Name:${lists?.name}`}
+               </Text>
+               <Text>
+                   {`Gender:${lists?.gender}`}
+               </Text>
+               <Text>
+                  {`Eye-color:${lists?.eye_color}`} 
+               </Text>
+               <Text>
+                   {`Skin_color:${lists?.skin_color}`}
+                   </Text>
+                   <Text>
+                   {`Hair_color:${lists?.hair_color}`}
+                   </Text>
+                   <Text>
+                   {`Height:${lists?.height}`}
+                   </Text>
+                   <Text>
+                   {`Mass:${lists?.mass}`}
+                   </Text>
+           </Box>
         </Container>
         </>
     )

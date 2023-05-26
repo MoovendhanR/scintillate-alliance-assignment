@@ -5,6 +5,7 @@ import { useState } from "react";
 // import { useParams } from "react-router";
 import { BoxShadow, BoxShadow1 } from "../Components/BoxShadow";
 import DetailedMovies from "../Components/DetailedMovies";
+import { DetailedCard } from "../Components/DetailedCard";
 // import { DetailedCard } from "./DetailedCard";
 
 
@@ -55,29 +56,7 @@ useEffect(() => {
         <br/>
         <Box >
           {lists? (
-               <Box boxShadow={BoxShadow} p="20px" textAlign={"center"}>
-               <Text as='b'textDecoration={"underline"}>
-                   {`Name:${lists?.name}`}
-               </Text>
-               <Text>
-                   {`Gender:${lists?.gender}`}
-               </Text>
-               <Text>
-                  {`Eye-color:${lists?.eye_color}`} 
-               </Text>
-               <Text>
-                   {`Skin_color:${lists?.skin_color}`}
-                   </Text>
-                   <Text>
-                   {`Hair_color:${lists?.hair_color}`}
-                   </Text>
-                   <Text>
-                   {`Height:${lists?.height}`}
-                   </Text>
-                   <Text>
-                   {`Mass:${lists?.mass}`}
-                   </Text>
-           </Box>
+                <DetailedCard lists={lists} />
               ) : (
                 <Flex justify="center" mt={"5"}>
                   <Spinner

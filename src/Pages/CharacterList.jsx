@@ -142,7 +142,7 @@ function CharacterList() {
                   <Flex>
                     <Box
                       onClick={handleClick}
-                      _hover={{ border: '1px solid black', cursor: "pointer" }}
+                      _hover={{ border: '1px solid grey', cursor: "pointer" }}
                     >
                       <Text onClick={() => updateData(e.url)}>
                         {`Name: ${e.name}`}
