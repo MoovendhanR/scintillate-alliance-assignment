@@ -17,10 +17,14 @@ I developed this Scintillate Alliance company assignment within a day.
 
 Deployment
 
- - Vercel<br/>
+ - Netlify<br/>
 
 
 ## Some of the Screenshots
+![image](https://github.com/MoovendhanR/scintillate-alliance-assignment/assets/87975437/ca7a9508-b231-4e65-a2e6-a7c7236123ef)
+![image](https://github.com/MoovendhanR/scintillate-alliance-assignment/assets/87975437/87f4dd99-1971-4b06-966c-94924d9d69ac)
+![image](https://github.com/MoovendhanR/scintillate-alliance-assignment/assets/87975437/b702ba5b-8bfd-4ca7-a81d-e4732f37046d)
+![image](https://github.com/MoovendhanR/scintillate-alliance-assignment/assets/87975437/ba925d95-4f7d-48fa-ae11-dab4be789b11)
 
 
 ## Conntributor!
