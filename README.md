@@ -1,4 +1,4 @@
-### Student Chart.
+### Scintillate Alliance Assignment
 
 See the section about [demo](https://lovely-banoffee-85e375.netlify.app/) for more information.
 
